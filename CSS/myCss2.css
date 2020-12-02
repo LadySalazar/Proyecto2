@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #eadcf7;
+	-webkit-background-size: cover;
+	background-size: 25px 25px;
+    background-size: 100% 100%;
+	background-attachment: fixed;
+	font-family: 'Arial';
+}
+	
+.GoodWill{
+	font-family: 'Lucida Bright';
+	text-decoration: none;
+	color: #fff;
+	font-size: 80px;
+	text-align: center;
+}
+@media screen and (max-width: 700px){
+	ul.tabs li{
+		width: none;	
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+@media screen and (max-width: 450px){
+	ul.tabs li a{
+		padding: 15px 0px;
+	}
+	ul.tabs li a .tap-text{
+		display: none;
+	}
+}
+
+header{
+	width: 100%;
+	height: 300px;
+	background: #8E2DE2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%,0.671), hsla(317, 45%, 52%,0.616)), url(https://i.ibb.co/fxKdc1N/fondo.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, hsla(281, 77%, 44%, 0.29), hsla(260, 77%, 44%, 0.29)), url(https://i.ibb.co/fxKdc1N/fondo.jpg/IMAG/fondo.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: 25px 25px;
+    background-size: 100% 100%;
+	background-attachment: fixed;
+	position: relative;
+}
+
+nav{
+	text-align: right;
+	color: #fff;
+	font-size: 35px;
+	background-color: #a333c85e;
+font-weight: lighter;
+font-weight: bolder;
+	font-family: 'Arial';
+	padding: 30px 50px 0 0;
+	margin-bottom: -2px;
+}
+
+nav > a{
+	color:#fff;
+	font-weight: 200%;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.wave{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+header .GoodWill{
+	display: flex;
+	height: 200px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.GoodWill h1{
+	font-size: 100px;
+	color:#fff; 
+	font-family: 'Italianno', cursive;
+}
+
+/*------------------------------------------------------------------------*/
+
+
+/*------------- pie de pagina ---------------*/
+footer{
+	width: 100%;
+	background: #202020;
+	color: #fff;
+}
+
+.container-footer-all{
+
+	max-width: 900px;
+	max-height: auto;
+	margin: auto;
+	padding: 40px;
+	background:#000;
+}
+
+.container-body{
+	display: flex;
+	justify-content: space-between;
+}
+
+.colum1{
+	max-width: 300px;
+}
+
+.colum1 h1{
+	font-size: 22px;
+	color: #fff;
+}
+
+.colum1 p{
+	font-size: 14px;
+	color: #C7C7C7;
+	margin-top: 20px;
+	color: #fff;
+}
+
+.colum2{
+	max-width: 300px;
+}
+
+.colum2 h1{
+	font-size: 22px;
+	color: #fff;
+}
+
+.row{
+	margin-top: 30px;
+	display: flex;
+}
+
+.row img{
+	width: 30px;
+	height: 30px;
+}
+
+.row label{
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 15px;
+	color: #fff;
+}
+
+.colum3{
+	max-width: 300px;
+}
+
+.colum3 h1{
+	font-size: 22px;
+}
+
+.row2{
+	margin-top: 20px;
+	display: flex;
+}
+
+.row2 img{
+	width: 30px;
+	height: 30px;
+}
+
+.row2 label{
+	margin-left: 20px;
+	max-width: 280px;
+	margin-top: 5px;
+	color: #fff;
+}
+
+.container-footer{
+	width: 100%;
+	background: #101010;
+}
+
+.footer{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.copyright{
+	color: #C7C7C7;
+}
+
+.copyright a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1100px){
+	.container-body{
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.colum2, .colum3{
+		margin-top: 40px;
+	}
+}
+
+/*------------Menu (Inicio_Menu_Nosotros_LogOut)--------------*/
+#dropInicio{
+
+	margin-left: 650px;
+	margin-right: 0px;
+	bottom: 400px;
+	background: #000000;
+
+}
+#dropInicio:hover{
+background: #49118a;
+	border-radius: 10px;
+
+}	
+#dropMenu:hover{
+background: #49118a;
+	border-radius: 10px;
+
+}	
+#dropMenu{
+	background: #000000;
+
+}
+#dropNosotros:hover{
+background: #49118a;
+	border-radius: 10px;
+
+}	
+#dropNosotros{
+	background: #000000;
+
+}
+#dropLogOut:hover{
+background: #49118a;
+	border-radius: 10px;
+
+}	
+#dropLogOut{
+	background: #000000;
+
+}
+#C2{
+	float: left;
+	text-align: left;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Arial';
+	margin-left:15px;
+
+}
+
+#card{
+	margin-left:50px;
+}
