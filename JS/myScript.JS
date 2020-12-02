@@ -7,10 +7,17 @@ $("#dropMenu").click(function(){
 	getProductos();
 });
 
+$("#dropNosotros").click(function(){
+	IngresoOtraVentana();
+});
+$("#dropLogOut").click(function(){
+	IngresoOtraVentana2();
+});
+
 function getProductos(){
 	console.log("entreee");
 	$.ajax({
-		url: "http://ec2-54-157-158-193.compute-1.amazonaws.com/cgi-bin/Proyecto2/controladorP.py",
+		url: "http://ec2-100-25-165-44.compute-1.amazonaws.com/cgi-bin/Proyecto2/controladorP.py",
 		type: "GET",
 		contentType: "application/json; charset=utf-8", 
 		dataType:"JSON",
@@ -33,7 +40,7 @@ function getProductos(){
 				'<div class="header">'+respuesta[i].nombre+'</div>'+
 				'<div class="meta"><a>'+respuesta[i].TipoProducto+'</a></div>'+
 				'<div class="description">'+respuesta[i].precio+'</div></div>'+
-				' <div class="extra content"><button class="ui button">'+prueba+'</button></div></div>';
+				'<div class="extra content"><button class="ui button">'+prueba+'</button></div></div>';
 					$("#Productos").append(totalProductos[con]);
 					console.log(totalProductos[con]);
 
@@ -47,4 +54,15 @@ function getProductos(){
 		}
 
 	});
+}
+
+
+
+
+function IngresoOtraVentana(){
+	window.location.assign("index2.html");
+}
+
+function IngresoOtraVentana2(){
+	window.location.assign("index3.html");
 }
